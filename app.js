@@ -1,10 +1,13 @@
 (function () {
 	// body...
-	'use strict';
+ 'use strict';
  angular.module('myfirstapp',[])
- .controller('Mycontroller',function(){
 
- })
+ .controller('Mycontroller', function($scope){
+
+    $scope.name = "shreyas kamath";
+
+ });
 
 })();
 
