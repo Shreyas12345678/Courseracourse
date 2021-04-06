@@ -6,11 +6,21 @@
 	<script src="app.js"></script>
 	<title>angular js app</title>
 </head>
-<body>
+<body ng-app="'myfirstapp">
+	<h1>calculator</h1>
+	<div  ng-controller="Mycontroller" class="b1" style="border: 1px solid black;padding: 50px;
+	width:500px;height: 200px; background-color:purple; color: #fff; font-size:30px; font-family:arial;">
+		<div>
+			
+			<input type="text" ng-model="name" ng-keyup="display();" placeholder="Enter your name and detatisl" style="padding: 15px; width: 220px; border-radius:10px; border-style:none; cursor: pointer;">
+			</div>
+
+			<div style="position: relative; padding: 30px; margin-left:-30px;">total numeric value in name  is: 
+			{{totalValue}}
+			
+			</div>
+		</div>
 <h1>this is wonderful and new for me and seems intresting and have a  nice one ssjs</h1>
-<div ng-controller="Mycontroller">
-	
-	{{ name }}
-</div>
+
 </body>
 </html>
